@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>To-Do App</h1>
+      <button id="toggleTheme" aria-label="Schimbă temele">🌙</button>
+    </header>
+    <main>
+      <section>
+        <h2>Adaugă Sarcină Nouă</h2>
+        <form id="taskForm" aria-labelledby="taskFormTitle">
+          <label id="taskFormTitle" for="taskInput">Noua Sarcină:</label>
+          <input type="text" id="taskInput" aria-describedby="taskInputHint" />
+          <p id="taskInputHint">Apasă Enter pentru a adăuga o sarcină</p>
+        </form>
+      </section>
+      <section>
+        <h2>Listă de Sarcini</h2>
+        <ul id="taskList" role="list" aria-labelledby="taskListTitle"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
