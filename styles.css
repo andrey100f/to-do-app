@@ -66,3 +66,7 @@ li {
   background-color: #1a1a1a;
   color: #fff;
 }
+
+.dark-mode li {
+  color: #000;
+}
